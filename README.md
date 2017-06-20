@@ -25,6 +25,7 @@ Poxi_ADC->set_channel_mode(SINGLE_CHANNEL);
 Poxi_ADC->set_power_mode(MODE2);
 ```
 The following table present the power mode options.
+
 | Mode | Description |
 |---|---|
 |MODE1|The AD7887 enters shutdown if the CS input is 1 and is in full power mode when CS is 0.|
