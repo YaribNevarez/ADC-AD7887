@@ -24,13 +24,14 @@ Poxi_ADC->set_reference(REF_ENABLED);
 Poxi_ADC->set_channel_mode(SINGLE_CHANNEL);
 Poxi_ADC->set_power_mode(MODE2);
 ```
-
+The following table present the power mode options.
 | Mode | Description |
 |---|---|
 |MODE1|The AD7887 enters shutdown if the CS input is 1 and is in full power mode when CS is 0.|
 |MODE2|The AD7887 is always fully powered up, regardless of the status of any of the logic inputs.|
 |MODE3|The AD7887 automatically enters shutdown mode at the end of each conversion, regardless of the state of CS.|
 |MODE4|In this standby mode, portions of the AD7887 are powered down but the on-chip reference voltage remains powered up.|
+
 
 The incoming code illustrates how to get the analogue voltage conversion.
 ```C
